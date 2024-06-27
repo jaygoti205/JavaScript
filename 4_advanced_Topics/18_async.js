@@ -1,19 +1,41 @@
-async function demo(){
-    let p1=new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve("p1 Done");
-        },5000);
+console.log("Example Async/Await:");
+function demo(data) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data:", data);
+            resolve("done");
+        }, 2000);
     });
-
-    let p2=new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve("p2 Done");
-        },3000);
-    });
-
-    let wait1=await p1;
-    console.log(wait1);
-    let wait2= await p2;
-    console.log(wait2);
 }
-demo();
+
+function demo2(data) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data:", data);
+            resolve("done");
+        }, 2000);
+    });
+}
+// async function abc(){
+//     await demo(1);
+//     await demo(2);
+// }
+// abc();
+
+
+//Self Invoking / Using IIFE(Immediately Invoked Function Expression)
+(async function () {
+    await demo(1)
+        .then((res) => {
+            console.log(res);
+        });
+    await demo2(2)
+        .then((res) => {
+            console.log(res);
+        });;
+    await demo(3)
+    
+    
+    
+    ;
+})();

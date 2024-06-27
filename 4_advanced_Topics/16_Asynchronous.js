@@ -1,3 +1,4 @@
+console.log('Example of Asynchronous java script-----');
 console.log("This is first");
 
 setTimeout(function(){

@@ -1,3 +1,4 @@
+console.log('Example of Event Loop');
 setTimeout(() => {
     console.log("settime");
 }, 0);

@@ -1,4 +1,4 @@
-
+console.log('Example of Callback');
 function callback(num, func) {
     for (var i = 0; i < num; i++) {
         func();
