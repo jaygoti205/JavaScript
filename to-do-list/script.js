@@ -68,5 +68,3 @@ function filter(filter) {
     filterTask = filter;
     reader();
 }
-
-reader();
