@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, rgb(107, 207, 243), rgb(96, 96, 232), rgb(171, 86, 246));
+}
+
+#container {
+    background-color: rgb(117, 200, 186);
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+
+#container h1 {
+    font-size: 4em;
+}
+
+#container #error {
+    color: rgb(220, 17, 17);
+    margin-top: 30px;
+    padding-left: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#taskAdd {
+    margin-bottom: 30px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 11px;
+    background-color: white;
+}
+
+#txt {
+    height: 2em;
+    width: 80%;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    border-radius: 11px 0 0 11px;
+}
+
+#btnAdd {
+    height: auto;
+    width: 20%;
+    border-radius: 0 11px 11px 0;
+    border: none;
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: rgb(255, 202, 142);
+}
+
+#btnAdd:hover {
+    font-size: 2.4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+#taskList {
+    margin-top: 10px;
+}
+
+.task {
+    background-color: rgb(255, 202, 142);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.task .checkbox {
+    margin: 10px;
+    width: 30px;
+    height: 30px
+}
+
+.task p {
+    flex: 1;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.btnDelete,
+.btnEdit {
+    font-size: 1.3em;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(239, 96, 130);
+    margin: 0.5em;
+}
+
+.btnDelete:hover,
+.btnEdit:hover {
+    box-shadow: 5px 5px 10px black;
+}
