@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#userDetail {
+    background-color: rgb(100, 121, 161);
+    text-align: center;
+
+}
+
+#userDetail #userName {
+    border-bottom: 2px solid black;
+    padding: 15px;
+    font-size: 3em;
+}
+
+#userDetail #userImage {
+    margin-top: 15px;
+    border: 1px solid black;
+    height: 10em;
+    width: 10em;
+}
+
+#userDetail #fullName {
+    font-size: 2em;
+}
+
+#userDetail #address {
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#buttons {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.btn {
+    font-size: 1.5em;
+    width: 10em;
+    border: 1px solid black;
+}
+
+#displayProduct {
+    background-color: lightblue;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 40px
+}
+
+.singleProduct {
+    width: 20%;
+    margin: auto;
+}
+
+.singleProduct .productImage {
+    height: 25em;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.singleProduct label {
+    font-size: 1.5em;
+    width: 100%;
+    float: left;
+}
+
+.singleProduct,
+.singleProduct label,
+.singleProduct .price,
+.singleProduct .quantity,
+.singleProduct b,
+.singleProduct .totalAmount {
+    padding: 10px;
+    text-align: center;
+}
+
+.singleProduct .quantity {
+    font-size: 1.3em;
+    margin: 10px;
+}
