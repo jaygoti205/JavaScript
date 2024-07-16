@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Data Analysis Dashboard</h1>
+        <label>select Chart type:</label>
+       <select id="chartType" name="Type">
+        <option value="bar" selected>bar</option>
+        <option value="line">line</option>
+        <option value="pie">pie</option>
+        <option value="polarArea">polarArea</option>
+       </select>
+
+       <label>select subject:</label>
+       <select id="subject" name="subject">
+        <option value="all" selected>All Subject</option>
+        <option value="hindi">Hindi</option>
+        <option value="english">English</option>
+        <option value="history">History</option>
+        <option value="science">Science</option>
+        <option value="economics">Economics</option>
+       </select>
+        <button id="show">Show</button>
+        <div id="metrics">
+            <h2>Metrics</h2>
+            <ul id="metrics-list">
+                
+            </ul>
+        </div>
+
+        <div id="charts">
+            <h2>Chart</h2>
+            <canvas id="bar-chart" height="500" width="900"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
