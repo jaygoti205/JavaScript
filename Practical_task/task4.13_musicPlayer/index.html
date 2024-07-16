@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="leftContainer">
+            <div id="songInfoArea">
+                <img src="songs/1.jpg" alt="Warriyo - Mortals" id="image">
+                <h3 id="songTitle">Warriyo - Mortals</h3>
+                <audio id="audio" src="songs/1.mp3" controls></audio>
+            </div>
+            <div id="eventsArea">
+                <span class="material-symbols-outlined" id="shuffle">shuffle</span>
+                <span class="material-symbols-outlined" id="previousSong">skip_previous</span>
+                <span class="material-symbols-outlined" id="playPause">play_circle</span>
+                <span class="material-symbols-outlined" id="nextSong">skip_next</span>
+                <span class="material-symbols-outlined" id="addPlaylist">playlist_add</span>
+            </div>
+        </div>
+        <div id="rightContainer">
+            <div id="buttons">
+                <button id="allSong" class="btn">All Song</button>
+                <button id="playlist" class="btn">Playlist</button>
+                <button id="addNewSong" class="btn">Add New Song</button>
+            </div>
+            <div id="songList">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

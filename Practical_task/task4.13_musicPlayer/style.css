@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/020/333/164/small_2x/stephen-foster-memorial-day-illustration-with-copy-space-area-and-blue-background-suitable-to-use-on-memorial-day-event-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+#leftContainer {
+    background-color: #534181;
+    color: white;
+    border: 1px solid black;
+    width: 550px;
+    margin: 15px;
+}
+
+#rightContainer {
+    background-color: #534181;
+    border: 1px solid black;
+    width: 550px;
+    margin: 15px;
+}
+
+#image {
+    width: 450px;
+    height: 500px;
+    padding: 50px;
+}
+
+#songTitle {
+    padding-left: 25px;
+}
+
+audio {
+    width: 500px;
+    height: 3em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #c877f6;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-left: 10px;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+audio::-webkit-media-controls-mute-button {
+    display: none;
+}
+
+audio::-webkit-media-controls-play-button {
+    display: none;
+}
+
+audio::-webkit-media-controls-volume-control-container {
+    display: none;
+}
+
+audio::-webkit-media-controls-volume-control-container.closed {
+    display: none;
+}
+
+#eventsArea {
+    display: flex;
+    justify-content: space-around;
+    background-color: #c877f6;
+    padding: 20px 5px;
+    border-radius: 50px 50px 0 0;
+}
+
+.material-symbols-outlined {
+    font-size: 3em;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #c877f6;
+    box-shadow: 5px 5px 5px black;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    background-color: #c877f6;
+    padding: 20px 5px;
+    border-radius: 0 0 50px 50px;
+}
+
+#buttons .btn {
+    font-size: 1.3em;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #c877f6;
+    box-shadow: 5px 5px 5px black;
+}
+
+.singleSong {
+    background: linear-gradient(to right, #c877f6, #785dbb);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+
+.singleSong img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.singleSong span {
+    font-size: 2em;
+    margin: 5px;
+    padding: 0;
+}
+
+.singleSong p {
+    padding: 10px;
+    flex: 1;
+}
