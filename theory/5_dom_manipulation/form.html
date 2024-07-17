@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Handling</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            width: 30%;
+            text-align: center;
+            padding: 15px;
+        }
+
+        input,
+        button {
+            margin: 10px;
+        }
+        button{
+            width: 5em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="" id="form1">
+        <h1>Form</h1>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br>
+        <button id="submit" type="button">Submit</button>
+        <button id="reset">Reset</button><br>
+        <label id="msg"></label>
+    </form>
+    <script src="./form.js"></script>
+</body>
+
+</html>
