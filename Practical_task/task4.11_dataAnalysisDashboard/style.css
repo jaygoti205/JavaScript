@@ -6,8 +6,6 @@ body {
 }
 
 .container {
-    margin: 20px auto;
-    padding: 20px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -32,15 +30,15 @@ label{
 
 #metrics-list {
     display: flex;
-
 }
 
 #metrics-list li {
     background-color: aquamarine;
-    width: 100px;
-    padding: 25px;
+    width: 90px;
+    padding: 30px;
     margin: 10px;
     border-radius: 50px;
+    font-weight: bold;
 }
 
 .chart-container {
@@ -66,8 +64,4 @@ canvas {
 ul {
     list-style-type: none;
     padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
 }
