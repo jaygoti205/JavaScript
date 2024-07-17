@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3a3a3;
+    display: flex;
+    justify-content: space-around;
+}
+
+#container {
+    width: 50%;
+    margin-top: 150px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#textInput {
+    width: 50%;
+    height: 100px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button {
+    background-color: #4c4faf;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #4580a0;
+}
+
+#subContainer {
+    width: 70%;
+    margin-right: 20px;
+    float: right;
+    text-align: left;
+}
+
+#repeatedWord{
+   
+    font-weight: bold;
+}
