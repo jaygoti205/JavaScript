@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("https://www.shutterstock.com/image-vector/hourglass-icon-lines-triangles-point-600nw-758242885.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+#input-contain {
+    background-color: rgba(255, 255, 255, 0.475) ;
+    padding: 3em;
+    margin: 15em 20em 3em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
+}
+
+label {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+#second {
+    background-color: rgba(255, 255, 255, 0.801);
+    font-size: 1.8em;
+    margin: 5px 5px;
+    border-radius: 5px;
+   padding: 5px;
+}
+
+#start {
+    background-color: rgba(0, 0, 0, 0.698);
+    color: rgb(173, 173, 173);
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 10em;
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px 10px rgb(184, 184, 184);
+}
+#start:hover{
+    box-shadow: 5px 5px 10px rgb(23, 23, 23);
+}
+
+#countdown {
+    background-color: rgba(0, 0, 0, 0.369);
+    color: white;
+    margin: 0 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px white;
+
+}
+#countdown label{
+    color: white;
+}
+
+#countdown #num {
+    margin: 1em;
+}
