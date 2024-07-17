@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#editContainer{
+    width: 27em;
+    border:  1px solid black;
+    padding: 10px;
+}
+#editContainer .btn{
+    margin: 10px;
+    font-size: 1.2em;
+    padding: 5px;
+
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  
+}
+
+#myForm{
+    border: 1px solid black;
+    padding: 30px;
+
+}
+
+#myForm input{
+    margin:10px;
+}
+#myForm label{
+   font-size: 1.2em;
+}
+
+#myForm h4{
+    font-size: 1.2em;
+}
