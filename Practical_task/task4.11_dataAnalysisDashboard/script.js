@@ -7,7 +7,7 @@ let total = 0;
 let subjectTotals = [];
 let show = document.getElementById("show");
 let chart;
-let typeChart="bar";
+let typeChart = "bar";
 let subject = "all";
 
 function calculateMarks(sub) {
@@ -47,7 +47,6 @@ const calculateMetrics = () => {
     }
     const average = sum / subjectTotals.length;
     return {
-        sum,
         average,
         min,
         max
