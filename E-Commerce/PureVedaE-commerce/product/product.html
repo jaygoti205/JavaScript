@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureVeda|Product</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
+    <link rel="stylesheet" href="../headerFooter/headerFooter.css">
+    <link rel="stylesheet" href="./product.css">
+</head>
+
+<body>
+    <script src="../headerFooter/headerFooter.js"></script>
+    <div id="container">
+        <!-- header section -->
+        <div id="upperPart">
+            <script>
+                headerPart()   
+            </script>
+        </div>
+        <!-- content section -->
+        <div id="middlePart">
+            <div id="leftPart">
+                <div id="filterContainer">
+                    <h1>Filter</h1>
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="all">All Product</option>
+                    </select>
+
+                    <label for="subCategory">Sub Category</label>
+                    <select id="subCategory">
+                        <option value="all" selected>All Product</option>
+                    </select>
+
+                    <label for="price">Budget</label>
+                    <input type="number" id="budget" placeholder="Budget">
+                    <button id="apply">Apply</button>
+
+                </div>
+            </div>
+            <div id="rightPart">
+                <div id="allProduct"></div>
+                <h1>Blog</h1>
+                <div id="blogSection">
+                    <div class="blog">
+                        <img src="https://www.oceglow.com/cdn/shop/articles/Whisledown_Blog_Banner_700x.jpg?v=1655375762"
+                            alt="Blog Image">
+                        <p> Bridgerton returned, and so did the lady who knows everything, Lady Whistledown. (Yes, we
+                            know we are a little late to the party, but it is no biggie). This time she is back with her
+                            historical K-beauty journals to spill the beans on your favourite Netflix characters’
+                            K-Beauty secrets, so brace yourself to know the deets 🤫.</p>
+                        <p> If you're into skincare trends, you know it's almost hard to overlook the fact that Korean
+                            Beauty (also known as K-Beauty) is incredibly effective and is now ruling the business.</p>
+                        <p>Koreans have without a doubt the most promising skincare regimen, and K Beauty is even
+                            featured in some of the most popular Netflix series. These items are based on the Korean
+                            beauty concept, which emphasises consistency and commitment. Well, in our opinion, what
+                            separates these products from beauty products all around the world is that they stay for the
+                            long haul.</p>
+                    </div>
+                    <div class="blog">
+                        <img src="https://www.oceglow.com/cdn/shop/articles/272440622_1235577950311017_2306724406126046343_n_1_749x.jpg?v=1654596450"
+                            alt="Blog Image">
+                        <p>Did you know that you’re less likely to have a negative or allergic reaction if you’re using
+                            eco-friendly skincare products? You can definitely rely on nature's blessings to show the
+                            glow on your skin! </p>
+                        <p> These products not only protect your skin but also come with a promise to save the planet.
+                        </p>
+                        <p> Infused with the goodness of nature, these products are less prone to causing skin
+                            irritation and redness.</p>
+                        <p>They're good for you and haven't been tested on your furry friends.</p>
+                        <p>The biggest challenge we face every day is looking our best without harming the environment.
+                            It is very important to maintain a good diet for healthy skin, but assessing the skin care
+                            regime in terms of the products we use is also imperative. Whether you have sensitive skin
+                            or not, Océglōw’s products can be super beneficial for your skin.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- footer section -->
+        <div id="lowerPart">
+            <script>
+                footerPart(); 
+            </script>
+        </div>
+    </div>
+    <script src="../data/data.js"></script>
+    <script src="./product.js"></script>
+
+</body>
+
+</html>

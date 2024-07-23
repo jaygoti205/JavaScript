@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #f5f5f5;
+}
+
+#upperPart {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 2px 5px rgb(80, 79, 79);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#logoContainer {
+    width: 20%;
+}
+
+#logoContainer img {
+    width: 300px;
+    height: 100px;
+}
+
+#navbar {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#navbar li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #002f6a;
+}
+
+#navbar li a:hover {
+    color: #dfab32;
+}
+
+#authentication {
+    display: flex;
+    width: 15%;
+    margin-top: 20px;
+    font-size: 20px;
+    list-style: none;
+}
+
+#authentication li a span {
+    color: rgb(46, 46, 46);
+    font-size: 40px;
+    margin: 15px;
+}
+
+/* banner effect */
+#middlePart {
+    width: 100%;
+}
+
+#banner {
+    width: 100%;
+}
+
+/* products */
+
+.products {
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+
+.products h1 {
+    margin: 30px 0;
+    padding: 10px;
+    font-size: 50px;
+    border-bottom: 3px solid #3f8eab;
+}
+
+#latestProduct,
+#allProduct {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.singleProduct {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20PX;
+}
+
+.singleProduct img {
+    height: 475px;
+    /* object-fit: cover; */
+}
+
+.singleProduct p {
+    font-size: 20px;
+}
+
+.singleProduct h3 {
+    padding: 10px;
+}
+
+.singleProduct .addCart,
+.products #viewAll {
+    background-color: #002f6a;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.singleProduct .addCart:hover,
+.products #viewAll:hover {
+    background-color: #232323;
+}
+
+.products #viewAll {
+    padding: 15px 30px;
+    margin-top: 30px;
+}
+
+/* footer */
+#lowerPart {
+    background-color: black;
+    color: #f5f5f5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#menuContent {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#officeAddress {
+    padding: 30px;
+}
+
+#menuContent a,
+#help a,
+#officeAddress p {
+    color: #cecece;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+#menuContent a:hover,
+#help a:hover {
+    color: #6cb6f3;
+}
+
+#lowerPart #lastLine {
+    width: 100%;
+    background-color: #3f8eab;
+    text-align: center;
+    padding: 10px;
+}
+
+@media(max-width:1450px) {
+    .singleProduct img {
+        object-fit: cover;
+    }
+}
+
+@media(max-width:900px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #logoContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #authentication {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: auto;
+    }
+
+    #authentication li a span {
+        margin: 5px;
+    }
+
+    .singleProduct {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .singleProduct img {
+        height: 350px;
+    }
+}
+
+@media(max-width:500px) {
+    #authentication {
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
+    }
+
+    .singleProduct {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .singleProduct img {
+        height: 200px;
+    }
+
+    .singleProduct p {
+        font-size: 12px;
+    }
+
+    .singleProduct h3 {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .singleProduct .addCart {
+        font-size: 15px;
+        padding: 0;
+    }
+}
